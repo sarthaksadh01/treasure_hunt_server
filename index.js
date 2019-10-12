@@ -58,7 +58,8 @@ app.post("/submit", (req, res) => {
         length: 4,
         charset: 'alphabetic'
     });
-    var teamId = teamName.substr(0, 3) + contact.toString().substr(0, 3) + random.toLowerCase();
+    var teamId = teamName.substr(0, 3) + contact.toString().substr(0, 3) + random;
+    teamId= teamId.toLowerCase();
     db.collection("teams").add({
         level: 1,
         phone: contact,
