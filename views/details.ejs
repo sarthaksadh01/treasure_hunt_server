@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="display-4 text-center"> <%= title %></h3>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Team Nam</th>
+                <th scope="col">Team Leader</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Members</th>
+                <th scope="col">Team Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% var i  =0; %>
+                <% users.forEach(function(user) { i++; %>
+            <tr>
+                <th scope="row"> <%= i %> </th>
+                <td> <%= user.team_name %> </td>
+                <td> <%= user.team_leader %> </td>
+                <td> <%= user.phone %> </td>
+                <td> <%= user.members %> </td>
+                <td> <%= user.teamId %> </td>
+            </tr>
+
+            <% }); %>
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

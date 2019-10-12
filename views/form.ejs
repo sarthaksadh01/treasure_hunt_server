@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reg</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="ajax.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3 class="text-center display-2">Treasure Hunt</h3>
+            </div>
+            <div class="col-md-12">
+                <!-- <form> -->
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Team Name</label>
+                    <input type="text" class="form-control" id="teamName" placeholder="Team Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Team Leader</label>
+                    <input type="text" class="form-control" id="teamLeader" placeholder="Team Leader">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Phone</label>
+                    <input type="number" class="form-control" id="contact" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Members</label>
+                    <select class="form-control" id="members">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <button onclick="saveTeam()" class="btn btn-lg btn-success">Submit</button>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
